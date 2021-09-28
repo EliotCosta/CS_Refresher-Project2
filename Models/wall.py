@@ -1,6 +1,6 @@
-#from element import Element
+from Models.element import Element
 
-class Wall():
+class Wall(Element):
     def __init__(self, coordinates):
         """wall constructor taking coordinates of two diagonally opposed points of the wall
         we consider that the width is null
@@ -9,5 +9,3 @@ class Wall():
         """
         self.coordinates = coordinates
 
-    def get_coordinates(self):
-        return self.coordinates

@@ -1,5 +1,6 @@
 import unittest
 from Models.wall import Wall
+from Models.element import Element
 
 class TestWall(unittest.TestCase):
     def test_get_coordinates(self):
