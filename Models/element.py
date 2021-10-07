@@ -1,6 +1,6 @@
 class Element:
-    def __init__(self, coordinate):
-        self.coordinate = coordinate
+    def __init__(self, coordinates):
+        self.coordinates = coordinates
 
-def get_coordinates(self):
-        return self.coordinates
+    def get_coordinates(self):
+            return self.coordinates
