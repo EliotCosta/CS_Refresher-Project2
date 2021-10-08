@@ -34,8 +34,11 @@ class Area():
     def get_surface(self):
         """we suppose firstly that all area are rectangular
         """
-        distance1 = self.walls[0].get_distance()
-        distance2 = self.walls[1].get_distance()
+        if self.is_rectangular():
+
+            distance1 = self.walls[0].get_distance()
+            distance2 = self.walls[1].get_distance()
 
 
-        return distance1*distance2
+            return distance1*distance2
+        return False
