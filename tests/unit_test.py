@@ -58,5 +58,10 @@ class TestBuilding(unittest.TestCase):
         building = Building(areas)
         self.assertEqual(building.get_nbfloors(), 2)
 
+    def test_nb_of_areas(self):
+        areas = [[A11, A12, A13],[A21, A22, A23, A24, A25, A26]]
+        building = Building(areas)
+        self.assertEqual(building.get_nb_of_areas(), 9)
+
 if __name__ == '__main__':
     unittest.main()
