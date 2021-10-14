@@ -1,4 +1,4 @@
-from Models.element import Element
+from element import Element
 import math
 
 class Wall(Element):
@@ -6,9 +6,10 @@ class Wall(Element):
         """wall constructor taking coordinates of two diagonally opposed points of the wall
         we consider that the width is null
         Args:
-            coordinates (list of two two-item list): [description]
+            coordinates (list of two two-item list)
         """
         self.coordinates = coordinates
+    
     
     def get_distance(self):
         p1 = self.get_coordinates()[0]
